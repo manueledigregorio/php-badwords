@@ -2,6 +2,11 @@
   $name = $_GET['name'];
   $password = $_GET['password'];
 
+  var_dump($name);
+
+  
+//pass
+  $cerca_testo = str_ireplace($password, "***", $name );
 
 ?>
 
@@ -22,7 +27,10 @@
 </head>
 <body>
   <div class="container my-5">
-    <h1>ciao</h1>
+    <h1 class="mx-5">il tuo testo: <?php echo $name ?> il tuo testo è lungo: <?php echo strlen($name) ?> </h1>
+    <h1 class="mx-5">il tuo testo password: <?php echo $password ?></h1>
+
+    <p>PAROLE CENSURATE :   <?php echo $cerca_testo , ' LA LUNGHEZZA è DI: '. ' ' .strlen($name) ?></p>
 
   </div>
 </body>
