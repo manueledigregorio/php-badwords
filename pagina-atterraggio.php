@@ -30,7 +30,7 @@
     <h1 class="mx-5">il tuo testo: <?php echo $name ?> il tuo testo è lungo: <?php echo strlen($name) ?> </h1>
     <h1 class="mx-5">il tuo testo password: <?php echo $password ?></h1>
 
-    <p>PAROLE CENSURATE :   <?php echo $cerca_testo , ' LA LUNGHEZZA è DI: '. ' ' .strlen($name) ?></p>
+    <p>PAROLE CENSURATE :   <?php echo $cerca_testo , ' LA LUNGHEZZA è DI: '. ' ' .strlen($cerca_testo) ?></p>
 
   </div>
 </body>
